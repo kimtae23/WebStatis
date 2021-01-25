@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>BTS(Bangtan Sonyeondan)</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section>
+		<div class="circle"></div>
+		<header>
+			<a href="#" class="logo">
+				<img src="images/logobts.png">
+			</a>
+		</header>
+		<div class="content">
+			<div class="textBox">
+				<h2>Bangtan Sonyeondan<br><span> BTS </span></h2>
+				<p>BTS adalah grup penyanyi pria asal Korea Selatan yang dibentuk oleh label rekaman Big Hit Entertainment. Grup ini beranggotakan tujuh orang, yakni Rap Monster, Jin, Suga, J-Hope, Jimin, V dan Jungkook.</p>
+				<a href="#">Learn More</a>
+			</div>
+			<div class="imgBox">
+				<img src="images/bts.png" class="starbucks">
+			</div>
+			</div>
+		</div>
+		<ul class="thumb">
+			<li><img src="images/rsz_rm.png" onclick="imgSlider('images/RM.png');changeCircleColor('#a100b6')"></li>
+			<li><img src="images/seokjin.png" onclick="imgSlider('images/seokjin.png') ;changeCircleColor('#a100b6')"></li>
+			<li><img src="images/suga.png" onclick="imgSlider('images/suga.png') ;changeCircleColor('#a100b6')"></li>
+			<li><img src="images/jhope.png" onclick="imgSlider('images/jhope.png') ;changeCircleColor('#a100b6')"></li>
+			<li><img src="images/jiminn.png" onclick="imgSlider('images/jiminn.png') ;changeCircleColor('#a100b6')"></li>
+			<li><img src="images/tae.png" onclick="imgSlider('images/tae.png') ;changeCircleColor('#a100b6')"></li>
+			<li><img src="images/jungkookk.png" onclick="imgSlider('images/jungkookk.png') ;changeCircleColor('#a100b6')"></li>
+		</ul>
+		<ul class="sci">
+			<li><a href="#"><img src="images/facebook.png"></a></li>
+			<li><a href="#"><img src="images/instagram.png"></a></li>
+			<li><a href="#"><img src="images/twitter.png"></a></li>
+		</ul>
+	</section>
+	<script type="text/javascript">
+		function imgSlider(anything){
+			document.querySelector('.starbucks').src = anything;
+		}
+		function changeCircleColor(color){
+			const circle = document.querySelector('.circle');
+			circle.style.background = color;
+		}
+	</script>
+</body>
+</html>
